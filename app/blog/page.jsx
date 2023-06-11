@@ -2,7 +2,7 @@ import React from 'react'
 
 const blog = () => {
   return (
-    <div>
+    <>
       <div className="mt-6 mb-3 m-auto   w-[20rem] ">
         <h2 className=" text-2xl font-bold my-2  ">Popular Blogs</h2>
         <div className="card mt-4 ">
@@ -23,7 +23,7 @@ const blog = () => {
             .</p>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
