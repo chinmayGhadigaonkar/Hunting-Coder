@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 
 const fetchdata = async()=>{
   const res = await fetch("http://localhost:3000/api/getblog")
@@ -16,15 +16,17 @@ const blog = async() => {
     <>
       <div className="mt-6 mb-3 m-auto   w-[20rem] ">
 
-
+        <h1 className='text-center font-semibold text-3xl'>Blogs</h1>
         {
           blog.map((blog)=>{
             return(
-
             <div className="card  my-10" key={blog._id}>
           <h3 className="font-semibold  text-lg "> {blog.title}</h3>
           <p>{(blog.description).length>30?(blog.description).slice(0,50)+"..." :blog.description  }</p>
-          <button className=' bg-black text-white m-auto w-24 rounded-lg h-8 text-sm my-2  font-normal  hover:bg-white hover:text-black hover:border-2 hover:border-black  '>Read More</button>
+          <Link href={`/blogpost/${blog._id}`}>
+          <button className=' bg-black text-white m-auto w-24 rounded-lg h-8 text-sm my-2  font-normal  hover:bg-white hover:text-black hover:border-2 hover:border-black  '>
+            Read More</button>
+          </Link>
        
         </div>
             )

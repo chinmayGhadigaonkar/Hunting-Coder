@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <>
-    <div className="container p-5 ">
+    <div className=" m-auto container p-5 md:w-[54rem] ">
 
       <h1 className='text-center font-semibold text-3xl'>About us</h1>
       <br />
