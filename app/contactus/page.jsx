@@ -53,16 +53,16 @@ const contact = () => {
     <>
       <div className=' '>
         <h1 className='text-center pb-5 font-semibold text-3xl '>Contact Us</h1>
-        <div className=' rounded-lg w-[23rem] m-auto'>
-          <form action="" className='m-auto w-[22rem]  py-3'>
+        <div className=' rounded-lg m-auto'>
+          <form action="" className='m-auto w-[19rem] sm:w-[30rem]  py-3'>
             <p className=' text-lg font-medium  ml-2  '>Enter Name</p>
-            <input type="text" name='name' onChange={handleChange} className=' text-lg font-medium  ml-2 my-2  border-2  pl-2 h-9 w-[18.8rem] border-black rounded-lg   ' value={inputValue.name} />
+            <input type="text" name='name' onChange={handleChange} className=' text-lg font-medium  ml-2 my-2  border-[1px] border-black   pl-2 h-9 w-[18.8rem] sm:w-[25rem] hover:outline-black rounded-lg   ' value={inputValue.name} />
             <p className=' text-lg font-medium  ml-2 '>Email</p>
-            <input type="email" name='email' onChange={handleChange} className=' text-lg font-medium  ml-2 my-2  border-2  pl-2 h-9 w-[18.8rem] border-black rounded-lg  ' value={inputValue.email} />
+            <input type="email" name='email' onChange={handleChange} className=' text-lg font-medium  ml-2 my-2  border-[1px] border-black   pl-2 h-9 w-[18.8rem] sm:w-[25rem] hover:outline-black rounded-lg  ' value={inputValue.email} />
             <p className=' text-lg font-medium  ml-2 ' >Messaage</p>
-            <textarea name="msg" onChange={handleChange} value={inputValue.msg} id="" cols="30" rows="5" className=' text-lg font-medium  ml-2 my-2  border-2 pl-2  border-black rounded-lg   ' ></textarea><br />
+            <textarea name="msg" onChange={handleChange} value={inputValue.msg} id="" cols="30" rows="5" className='  border-black  text-lg font-medium w-[18.8rem] ml-2 my-2 sm:w-[25rem] border-[1px] pl-2 hover:outline-black rounded-lg   ' ></textarea><br />
 
-            <button className=' bg-black text-white m-auto w-36 rounded-lg h-8 text-lg font-medium  ml-2 hover:bg-white hover:text-black hover:border-2 hover:border-black  ' onClick={SendMsg} >Send</button>
+            <button className=' bg-black text-white m-auto w-24 rounded-lg h-8 text-sm my-2  font-normal  hover:bg-white hover:text-black hover:border-2 hover:border-black ml-2 ' onClick={SendMsg} >Send</button>
 
           </form>
 
