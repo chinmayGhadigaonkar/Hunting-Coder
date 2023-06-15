@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import { Toaster } from 'react-hot-toast'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,19 @@ export default function RootLayout({ children }) {
       <body className=" min-h-[100vh] flex flex-col justify-between " >
        
         <Navbar></Navbar>
+        <Toaster position='top-right' toastOptions={{
+          success:{
+            iconTheme:{
+              primary:"#0053a6"
+            }
+          },
+          error:{
+            iconTheme:{
+              primary:"#0053a6"
+            }
+          }
+        }}
+        />
         {children}
         <Footer></Footer>
         
