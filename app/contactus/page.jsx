@@ -54,7 +54,7 @@ const contact = () => {
       <div className=' '>
         <h1 className='text-center pb-5 font-semibold text-3xl '>Contact Us</h1>
         <div className=' rounded-lg m-auto'>
-          <form action="" className='m-auto w-[19rem] sm:w-[30rem]  py-3'>
+          <form action="" className='m-auto w-[19  rem] sm:w-[30rem]  py-3'>
             <p className=' text-lg font-medium  ml-2  '>Enter Name</p>
             <input type="text" name='name' onChange={handleChange} className=' text-lg font-medium  ml-2 my-2  border-[1px] border-black   pl-2 h-9 w-[18.8rem] sm:w-[25rem] hover:outline-black rounded-lg   ' value={inputValue.name} />
             <p className=' text-lg font-medium  ml-2 '>Email</p>
