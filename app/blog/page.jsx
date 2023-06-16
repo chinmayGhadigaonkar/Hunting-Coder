@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const fetchdata = async()=>{
+export const fetchdata = async()=>{
   const res = await fetch("http://localhost:3000/api/getblog")
   const blog = await res.json()
   return blog
